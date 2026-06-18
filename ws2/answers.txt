@@ -1,0 +1,16 @@
+Q1: git add notes.md ; git commit -m "ws2: add task line"
+Q2: git log --oneline -3
+Q3: bad commit hash = 1467d40
+Q4: git revert 1467d40 ; confirmed notes.md does not contain the WRONG line
+Q5: git rm --cached bigdata.bin ; echo "bigdata.bin" >> .gitignore ; git add .gitignore ; git commit --amend ; rm bigdata.bin ; git push
+Q6: git switch -c feature-summary
+Q7: printf "# Summary\nThis worksheet practices git workflows.\n" > summary.md ; git add summary.md ; git commit -m "ws2: add summary"
+Q8: git diff main..feature-summary --stat
+Q9: git switch main ; git merge feature-summary
+Q10: git branch -d feature-summary
+Q11: git merge conflict-real ; conflicted file = ws2/summary.md
+Q12: git diff --name-only --diff-filter=U
+Q13: edited summary.md to remove conflict markers and keep a resolved combined version
+Q14: git add summary.md ; git commit
+Q15: git fetch origin ; git log HEAD..origin/main --oneline
+Q16: git fetch downloads remote changes without merging them while git pull downloads remote changes and merges them into the current branch.
